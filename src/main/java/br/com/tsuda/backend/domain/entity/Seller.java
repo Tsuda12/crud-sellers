@@ -7,12 +7,16 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDate;
 import java.util.List;
 
 @Entity
-@Table(name = "seller")
+@Table(name = "sellers")
+@Getter
+@Setter
 public class Seller {
 
     @Id
